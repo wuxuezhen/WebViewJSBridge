@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67F43C80ABE4DC566FCFD36F /* libPods-WebViewJSBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFA2AEBBF29FC03AF317F73 /* libPods-WebViewJSBridge.a */; };
+		F208BF3620B69C88002062F1 /* JSNativeWkWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F208BF3520B69C88002062F1 /* JSNativeWkWebViewController.m */; };
+		F208BF3820B69D51002062F1 /* NativeJs.html in Resources */ = {isa = PBXBuildFile; fileRef = F208BF3720B69D51002062F1 /* NativeJs.html */; };
 		F29B9A3420B2CB4700BA757E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F29B9A3320B2CB4700BA757E /* AppDelegate.m */; };
 		F29B9A3C20B2CB4900BA757E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29B9A3B20B2CB4900BA757E /* Assets.xcassets */; };
 		F29B9A3F20B2CB4900BA757E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29B9A3D20B2CB4900BA757E /* LaunchScreen.storyboard */; };
@@ -40,6 +42,9 @@
 		193C050FCC52D345411389E7 /* Pods-WebViewJSBridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewJSBridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewJSBridge/Pods-WebViewJSBridge.debug.xcconfig"; sourceTree = "<group>"; };
 		75330183F605D0BD95EAACB0 /* Pods-WebViewJSBridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewJSBridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewJSBridge/Pods-WebViewJSBridge.release.xcconfig"; sourceTree = "<group>"; };
 		CAFA2AEBBF29FC03AF317F73 /* libPods-WebViewJSBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebViewJSBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208BF3420B69C88002062F1 /* JSNativeWkWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSNativeWkWebViewController.h; sourceTree = "<group>"; };
+		F208BF3520B69C88002062F1 /* JSNativeWkWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSNativeWkWebViewController.m; sourceTree = "<group>"; };
+		F208BF3720B69D51002062F1 /* NativeJs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = NativeJs.html; sourceTree = "<group>"; };
 		F29B9A2F20B2CB4700BA757E /* WebViewJSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewJSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29B9A3220B2CB4700BA757E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F29B9A3320B2CB4700BA757E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,6 +140,8 @@
 				F29B9A6620B2CD4400BA757E /* UIWebViewController.m */,
 				F29B9A6820B2CD5600BA757E /* WKWebViewController.h */,
 				F29B9A6920B2CD5600BA757E /* WKWebViewController.m */,
+				F208BF3420B69C88002062F1 /* JSNativeWkWebViewController.h */,
+				F208BF3520B69C88002062F1 /* JSNativeWkWebViewController.m */,
 				F29B9A3B20B2CB4900BA757E /* Assets.xcassets */,
 				F29B9A3D20B2CB4900BA757E /* LaunchScreen.storyboard */,
 				F29B9A4020B2CB4900BA757E /* Info.plist */,
@@ -165,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				F29B9A6B20B2CF7400BA757E /* ExampleApp.html */,
+				F208BF3720B69D51002062F1 /* NativeJs.html */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F208BF3820B69D51002062F1 /* NativeJs.html in Resources */,
 				F29B9A3F20B2CB4900BA757E /* LaunchScreen.storyboard in Resources */,
 				F29B9A3C20B2CB4900BA757E /* Assets.xcassets in Resources */,
 				F29B9A6C20B2CF7400BA757E /* ExampleApp.html in Resources */,
@@ -353,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F208BF3620B69C88002062F1 /* JSNativeWkWebViewController.m in Sources */,
 				F29B9A6720B2CD4400BA757E /* UIWebViewController.m in Sources */,
 				F29B9A4220B2CB4900BA757E /* main.m in Sources */,
 				F29B9A3420B2CB4700BA757E /* AppDelegate.m in Sources */,

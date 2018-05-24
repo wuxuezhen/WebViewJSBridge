@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UIWebViewController.h"
 #import "WKWebViewController.h"
+#import "JSNativeWkWebViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,11 +23,14 @@
     uiweb.tabBarItem.title = @"UIWeb";
     WKWebViewController *wkweb = [[WKWebViewController alloc] init];
     wkweb.tabBarItem.title = @"WKWeb";
+    JSNativeWkWebViewController *jsNative = [[JSNativeWkWebViewController alloc] init];
+    jsNative.tabBarItem.title = @"JSNative";
    
     // 2. Create the tab footer and add the UIWebView example
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     [tabBarController addChildViewController:uiweb];
-     [tabBarController addChildViewController:wkweb];
+    [tabBarController addChildViewController:wkweb];
+    [tabBarController addChildViewController:jsNative];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = tabBarController;
